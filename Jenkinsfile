@@ -1,7 +1,7 @@
 pipeline {More actions
 
   environment {
-    dockerimagename = "thetips4you/nodeapp"
+    dockerimagename = "jeflin/nodeapp"
     dockerImage = ""
   }
 
@@ -11,7 +11,7 @@ pipeline {More actions
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/shazforiot/nodeapp_test.git'
+        git 'https://github.com/docker-nodes/nodeapp_test.git'
       }
     }
 
